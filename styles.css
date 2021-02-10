@@ -23,6 +23,18 @@ header
     padding: 10px;
 }
 
+.daynight p
+{
+    display: block;
+    margin: 0 auto;
+}
+
+#sunmoon
+{
+    display: block;
+    margin: 0 auto;
+}
+
 nav
 {
     margin-top: 20px;
