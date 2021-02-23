@@ -18,7 +18,7 @@ function displayRadioValue() {
                 checkbox.type = "checkbox";
                 checkbox.name = "resort";
                 checkbox.value = "parksandrec";
-                checkbox.id = "cancun1";
+                //checkbox.id = "cancun1";
 
                 //Label for CheckBox 1
                 var label = document.createElement('label')
@@ -30,21 +30,72 @@ function displayRadioValue() {
                 checkbox1.type = "checkbox";
                 checkbox1.name = "resort";
                 checkbox1.value = "beaches";
-                checkbox1.id = "cancun2";
+                //checkbox1.id = "cancun2";
 
                 //Label for CheckBox 2
                 var label1 = document.createElement('label1')
-                label1.htmlFor = "cancun2";
+                //label1.htmlFor = "cancun2";
                 label1.appendChild(document.createTextNode('Beaches'));
+
+                //Third CheckBox for Cancun
+                var checkbox2 = document.createElement('input');
+                checkbox2.type = "checkbox";
+                checkbox2.name = "resort";
+                checkbox2.value = "boating";
+                //checkbox1.id = "cancun2";
+
+                //Label for CheckBox 3
+                var label2 = document.createElement('label2')
+                //label1.htmlFor = "cancun2";
+                label2.appendChild(document.createTextNode('Boating'));
+
+                //Fourth CheckBox for Cancun
+                var checkbox3 = document.createElement('input');
+                checkbox3.type = "checkbox";
+                checkbox3.name = "resort";
+                checkbox3.value = "boating";
+                //checkbox1.id = "cancun2";
+
+                //Label for CheckBox 4
+                var label3 = document.createElement('label3')
+                //label1.htmlFor = "cancun2";
+                label3.appendChild(document.createTextNode('Snorkeling'));
 
 
                 //Append all Checkboxes and labels to Div
                 linebreak = document.createElement("br");
+
                 result.appendChild(checkbox);
-                result.appendChild(linebreak);
-                result.appendChild(checkbox1);
                 result.appendChild(label);
+                result.appendChild(linebreak);
+
+                result.appendChild(checkbox1);
                 result.appendChild(label1);
+                result.appendChild(linebreak);
+
+                result.appendChild(checkbox2);
+                result.appendChild(label2);
+                result.appendChild(linebreak);
+
+                result.appendChild(checkbox3);
+                result.appendChild(label3);
+                result.appendChild(linebreak);
+
+            }
+            else if(radioButtonVal == "venice")
+            {
+
+            }
+            else if(radioButtonVal == "maldives")
+            {
+
+            }
+            else if(radioButtonVal == "newzealand")
+            {
+
+            }
+            else
+            {
 
             }
             
