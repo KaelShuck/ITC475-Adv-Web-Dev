@@ -229,7 +229,8 @@ function displayRadioValue() {
                 result.appendChild(linebreak);
             }
             else if(radioButtonVal == "newzealand")
-            {
+            {          
+
                 //Assigning code to the Div tag labeled result
                 var result = document.getElementById("result");
 
@@ -306,6 +307,14 @@ function displayRadioValue() {
                 result.appendChild(checkbox17);
                 result.appendChild(label17);
                 result.appendChild(linebreak);
+
+                //TODO remove method...
+                /*
+                for(j=0; j < 13; j++)
+                {
+                   result.getElementsByTagName.
+                }
+                */
 
             }
             else
