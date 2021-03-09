@@ -66,7 +66,7 @@ function ValidationEvent()
 
 
     if (fName !== null && fName !== '' && lName !== null && lName !== '' && phoneNo !== null && phoneNo !== '' && emailAddress !== null &&
-    emailAddress != '' && numAdults !== null && numAdults !== '' && numChildren !== '' && travelDates !== null && travelDates !== '' && tDate >= tDay)
+    emailAddress != '' && numAdults !== null && numAdults !== '' && numChildren !== '' && travelDates !== null && travelDates !== '' && tDate >= tDay && isNaN(phoneNo) )
     {
         alert("Success!");
         return true;
