@@ -39,3 +39,13 @@ function ShowHideCanDiv()
     dvMalActivities.style.display = "none";
     dvITActivities.style.display = "none";
 }
+
+function onSubmit()
+{
+    var fName = document.forms["form1"]["clientName"].value;
+    if (fName == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+
+}

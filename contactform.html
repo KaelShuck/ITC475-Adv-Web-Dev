@@ -88,10 +88,10 @@
                         </div>
         </div>
 
-        <form id="form1" onsubmit="onSubmit()">
+        <form id="form1" onsubmit="return onSubmit()">
             <br>
             Client first name:<br>
-            <input type="text" id="clientName" name="clientName" required>
+            <input type="text" id="clientName" name="clientName">
             <br>
             Client last name:<br>
             <input type="text" id="clientLastName" name="clientLastName" required>
@@ -114,11 +114,14 @@
             Travel Dates:<br>
             <input name="travelDates" id="date" type="date" required>
             <br>
+            <input type="submit" value="Submit"> 
             </form>
             </br>
             </br>
+           <!-----
             <button type="submit" form="form1" value="Submit">Submit</button>
             <button type="clear" form="form1" value="Clear">Clear</button>
+            --> 
 
     <script src="activities.js"></script>
     <section class="intro">
