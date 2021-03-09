@@ -40,10 +40,10 @@ function ShowHideCanDiv()
     dvITActivities.style.display = "none";
 }
 
-function onSubmit()
+function onSubmit(form)
 {
-    var fName = document.forms["form1"]["clientName"].value;
-    if (fName == "") {
+    var fName = form.form1.value;
+    if (fName == " ") {
     alert("Name must be filled out");
     return false;
     }

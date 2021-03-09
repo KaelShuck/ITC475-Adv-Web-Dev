@@ -88,10 +88,10 @@
                         </div>
         </div>
 
-        <form id="form1" onsubmit="return onSubmit()">
+        <form id="form1" onsubmit="return onSubmit(this)">
             <br>
             Client first name:<br>
-            <input type="text" id="clientName" name="clientName">
+            <input type="text" id="clientName" name="clientName" required>
             <br>
             Client last name:<br>
             <input type="text" id="clientLastName" name="clientLastName" required>
