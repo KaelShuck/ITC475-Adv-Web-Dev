@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    <script src="activities.js"></script>
     <header>
         <img src="images/mega travel logo.png" height="200px" alt="logo"/>
     </header>
@@ -88,42 +89,36 @@
                         </div>
         </div>
 
-        <form id="form1" onsubmit="return onSubmit(this)">
+        <form id="form1" action="#" method="post" target="_blank" onsubmit="return ValidationEvent()">
             <br>
             Client first name:<br>
-            <input type="text" id="clientName" name="clientName" required>
+            <input type="text" id="fName" name="fName">
             <br>
             Client last name:<br>
-            <input type="text" id="clientLastName" name="clientLastName" required>
+            <input type="text" id="lName" name="lName">
             <br>
             Client Phone Number:<br>
-            <input type="text" id="phoneNo" name="phoneNo" required>
+            <input type="text" id="phoneNo" name="phoneNo">
             <br>
             Client Email:<br>
-            <input type="text" id="email" name="email" required>
+            <input type="text" id="email" name="email">
             <br>
             Number of Adults:<br>
-            <input type="text" id="noOfAdults" name="noOfAdults" required>
+            <input type="text" id="noOfAdults" name="noOfAdults">
             <br>
             Number of Children:<br>
-            <input type="text" id="noOfChild" name="noOfChild" required>
-            <br>
-            Destination:<br>
-            <input type="text" id="destination" name="desination" required>
+            <input type="text" id="noOfChild" name="noOfChild">
             <br>
             Travel Dates:<br>
-            <input name="travelDates" id="date" type="date" required>
+            <input name="travelDates" id="date" type="date">
             <br>
             <input type="submit" value="Submit"> 
             </form>
             </br>
             </br>
-           <!-----
-            <button type="submit" form="form1" value="Submit">Submit</button>
-            <button type="clear" form="form1" value="Clear">Clear</button>
-            --> 
+    
 
-    <script src="activities.js"></script>
+    
     <section class="intro">
         <h1>Contact Form</h1>
         <p>

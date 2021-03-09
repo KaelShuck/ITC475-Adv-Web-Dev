@@ -40,12 +40,38 @@ function ShowHideCanDiv()
     dvITActivities.style.display = "none";
 }
 
-function onSubmit(form)
+
+// Below Function Executes On Form Submit
+function ValidationEvent() 
 {
-    var fName = form.form1.value;
-    if (fName == " ") {
-    alert("Name must be filled out");
-    return false;
+    /* var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var truTime = parseFloat(time);
+    var dateTime = date+' '+time;  */
+
+
+    var fName = document.getElementById("fName").value;
+    var lName = document.getElementById("lName").value;
+    var phoneNo = document.getElementById("phoneNo").value;
+    var emailAddress = document.getElementById("email").value;
+    var numAdults = document.getElementById("noOfAdults").value;
+    var numChildren = document.getElementById("noOfChild").value;
+    var travelDates = document.getElementById("date").value;
+
+    if (fName !== null && fName !== '' && lName !== null && lName !== '' && phoneNo !== null && phoneNo !== '' && emailAddress !== null &&
+    emailAddress != '' && numAdults !== null && numAdults !== '' && numChildren !== '' && travelDates !== null && travelDates !== '')
+    {
+        alert("Success!");
+        return true;
+    }
+    else
+    {
+        alert("Invalid Input");
+        return false;
     }
 
+
+    
 }
+    
