@@ -73,7 +73,7 @@ function ValidationEvent()
     }
     else
     {
-        alert("Invalid Input" + " " + tDate + " " + tDay);
+        alert("Invalid Input");
         return false;
     }
 
