@@ -58,16 +58,22 @@ function ValidationEvent()
     var numAdults = document.getElementById("noOfAdults").value;
     var numChildren = document.getElementById("noOfChild").value;
     var travelDates = document.getElementById("date").value;
+    
+    var tDate = Date.parse(travelDates);
+    var today = new Date();
+
+    var tDay = Date.parse(today);
+
 
     if (fName !== null && fName !== '' && lName !== null && lName !== '' && phoneNo !== null && phoneNo !== '' && emailAddress !== null &&
-    emailAddress != '' && numAdults !== null && numAdults !== '' && numChildren !== '' && travelDates !== null && travelDates !== '')
+    emailAddress != '' && numAdults !== null && numAdults !== '' && numChildren !== '' && travelDates !== null && travelDates !== '' && tDate >= tDay)
     {
         alert("Success!");
         return true;
     }
     else
     {
-        alert("Invalid Input");
+        alert("Invalid Input" + " " + tDate + " " + tDay);
         return false;
     }
 
