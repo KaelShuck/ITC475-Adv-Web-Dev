@@ -1,5 +1,6 @@
  
- function timeInput(){
+ function timeInput()
+ {
   //Capturing User desired On / Off times 
   var livingRoomLamp = document.getElementById("livingroom").value;
   var livingRoomLampOff = document.getElementById("livingroomoff");
@@ -55,19 +56,15 @@
   if(inputTime < currentTime)
   {
     alert("Test");
+    var swapImage = document.getElementById('lroom');
+    swapImage.src = "livinglamp.png"
   }
-
-  //Can't swamp images??!
-  var swapImage = document.getElementById("lroom");
-  swapImage.src = "images/livinglamp.png";
 
 
   //Need Loop to Display this while Running
   var n = d.toLocaleTimeString();
-  document.getElementById("timeClock").innerText = n;
-
-  //var valueSpan = document.getElementById("value");
-  //valueSpan.innerHTML = n.value;
+  document.getElementById("timeClock").innerHTML = n;
+  document.querySelectorAll('.inline-block #lroom').innerHTML = n;
 
   
 }
