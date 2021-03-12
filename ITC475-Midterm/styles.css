@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+header
+{
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.house
+{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+nav
+{
+    margin-top: 20px;
+    background: black;
+
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+nav a
+{
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+nav a:hover
+{
+    color:orange;
+}
+
+.intro
+{
+    margin-bottom: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.intro h1
+{
+    margin-bottom: 15px;
+}
+
+.intro p
+{
+    line-height: 1.5;
+}
+
+#time
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+    height: auto;
+    padding: 100px;
+ }
+
+ #smarthome
+ {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10%;
+
+ }
+
+footer
+{
+    list-style: none;
+    background: black;
+    padding: 10px 50px;
+}
+
+footer p
+{
+    color: white;
+}
+
+@media (min-width: 768px)
+{
+    header
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    nav
+    {
+        background: transparent;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    nav a
+    {
+        color: black;
+        position: relative;
+        top: 0;
+        transition: top 0.5s, color 0.5s;
+    }
+
+    nav a:hover
+    {
+        text-decoration: none;
+        color: red;
+        top: -10px;
+    }
+
+    .intro
+    {
+        width: 50%;
+    }
+
+
+
+}

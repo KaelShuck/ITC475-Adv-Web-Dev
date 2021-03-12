@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Smart House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="house" src="images/sh_banner1.jpg" height="400px" alt="logo"/>
+    </header>
+    <section>
+        <div class="bar"> </div>
+        <nav>
+            <ul>
+                <li><a href="simulation.html">Smart House</a></li>
+            </ul>
+        </nav>
+        <br>
+    </section>
+    <section class="intro">
+        <h1>Smart Home Timers</h1>
+        <p>
+            Welcome to Smart Home Timers, please input the time you'd like your appliances and/or utilities to activate in your home.
+        </p>
+    </section>
+    <script src="time.js"></script>
+    <form>
+        <br>
+        <label for="livingroomlamp">Living Room Lamp: </label>
+        <input type="time" id="livingroom" onchange="timeInput();"/>
+        Living Room Lamp Off:
+        <input type="time" id="livingroomoff" onchange="timeInput();"/>
+        <br>
+        <p>
+            Value of the <code>time</code> input: <code>
+                    "<span id="value">n/a</span>"</code>.
+          </p>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desk Lamp:
+        <input type="time" id="bedroom" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desk Lamp Off:
+        <input type="time" id="bedroomoff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Lamp:
+        <input type="time" id="floor" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Lamp Off:
+        <input type="time" id="flooroff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bathroom Fan:
+        <input type="time" id="bahtroom" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bathroom Fan Off:
+        <input type="time" id="bathroomoff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Washer:
+        <input type="time" id="washer" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Washer Off:
+        <input type="time" id="washeroff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dryer:
+        <input type="time" id="dryer" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dryer Off:
+        <input type="time" id="dryeroff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Door:
+        <input type="time" id="frontdoor" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;Front Door Unlocked:
+        <input type="time" id="frontdooroff" onchange="timeInput();"/>
+        <br>
+        <br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Door:
+        <input type="time" id="backdoor" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back Door Unlocked:
+        <input type="time" id="backdooroff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Garage Door:
+        <input type="time" id="garage" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Garage Door Shut:
+        <input type="time" id="garageoff" onchange="timeInput();"/>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Fan:
+        <input type="time" id="kitchen" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Fan Off:
+        <input type="time" id="kitchenoff" onchange="timeInput();"/>
+        <br>
+        <br>
+        Dining Room Light:
+        <input type="time" id="diningroom" onchange="timeInput();"/>
+        &nbsp;&nbsp;&nbsp;Dining Room Light Off:
+        <input type="time" id="diningroomoff" onchange="timeInput();"/>
+        <br>
+        <br>
+        </form>
+        </br>
+        </br>
+</body>
+<footer>
+    <p>
+        Copyright Protected. All Rights Reserved.
+    </p><br/>
+    <p>SmartHome</p>    <p>smart@home.com</p>
+</footer>
+
+</html>
