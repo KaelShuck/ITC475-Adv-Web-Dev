@@ -16,6 +16,13 @@ header
     background-color: lightblue;
 }
 
+li {
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: circle;
+    display: inline;
+}
+
 .bar
 {
     display: flex;

@@ -21,37 +21,38 @@
             </ul>
         </nav>
     </section>
-        <div class="selection">
-            <span>Choose a destination to see activites</span><br>
-            <br/>
-            <label for="chkNZ">
-                <input type="radio" id="chkNZ" name="destination" onClick="ShowHideNZDiv()"/>
-                New Zealand
-            </label>
-            <label for="chkMal">
-                <input type="radio" id="chkMal" name="destination" onClick="ShowHideMalDiv()"/>
-                Maldives, South Asia
-            </label>
-            <label for="chkIT">
-                <input type="radio" id="chkIT" name="destination" onClick="ShowHideITDiv()"/>
-                Venice, Italy
-            </label>
-            <label for="chkCan">
-                <input type="radio" id="chkCan" name="destination" onClick="ShowHideCanDiv()"/>
-                Cancun
-            </label>
-        </div>
+        <form id="form1" action="./confirm.php" method="post" onsubmit="return ValidationEvent()">
+            <div class="selection">
+                <span>Choose a destination to see activites</span><br>
+                <br/>
+                <label for="chkNZ">
+                    <input type="radio" id="chkNZ" name="destination" onClick="ShowHideNZDiv()" value="0"/>
+                    New Zealand
+                </label>
+                <label for="chkMal">
+                    <input type="radio" id="chkMal" name="destination" onClick="ShowHideMalDiv()" value="1"/>
+                    Maldives, South Asia
+                </label>
+                <label for="chkIT">
+                    <input type="radio" id="chkIT" name="destination" onClick="ShowHideITDiv()" value="2"/>
+                    Venice, Italy
+                </label>
+                <label for="chkCan">
+                    <input type="radio" id="chkCan" name="destination" onClick="ShowHideCanDiv()" value="3"/>
+                    Cancun
+                </label>
+            </div>
 
-        <div class="activitiesGroup">
-            <div id="dvNZActivities" style="display: none">
-            <input type="checkbox" id="NZcitytour" name="NZcitytour" value="City Tour">
-            <label for=NZcitytour>City Tour</label><br>
-            <input type="checkbox" id="NZcycling" name="NZcycling" value="Cycling">
-            <label for=NZcycling>Cycling</label><br>
-            <input type="checkbox" id="NZmuseums" name="NZmuseums" value="Museums">
-            <label for=NZmuseums>Museums</label><br>
-            <input type="checkbox" id="NZboating" name="NZboating" value="Boating">
-            <label for=NZboating>Boating</label><br>
+            <div class="activitiesGroup">
+                <div id="dvNZActivities" style="display: none">
+                <input type="checkbox" id="NZcitytour" name="NZcitytour" value="City Tour">
+                <label for=NZcitytour>City Tour</label><br>
+                <input type="checkbox" id="NZcycling" name="NZcycling" value="Cycling">
+                <label for=NZcycling>Cycling</label><br>
+                <input type="checkbox" id="NZmuseums" name="NZmuseums" value="Museums">
+                <label for=NZmuseums>Museums</label><br>
+                <input type="checkbox" id="NZboating" name="NZboating" value="Boating">
+                <label for=NZboating>Boating</label><br>
             </div>
 
             <div id="dvMalActivities" style="display: none">
@@ -77,20 +78,18 @@
                     <label for=ITCity>City Tour</label><br>
                     </div>
 
-                    <div id="dvCanActivities" style="display: none">
-                        <input type="checkbox" id="CanParks" name="CanParks" value="Parks and Recreation">
-                        <label for=CanParks>Parks and Recreation</label><br>
-                        <input type="checkbox" id="CanBeach" name="CanBeach" value="Beaches">
-                        <label for=CanBeach>Beaches</label><br>
-                        <input type="checkbox" id="CanBoating" name="CanBoating" value="Beaches">
-                        <label for=CanBoating>Boating</label><br>
-                        <input type="checkbox" id="CanSnorkel" name="CanSnorkel" value="Snorkeling">
-                        <label for=CanSnorkel>Snorkeling</label><br>
-                        </div>
-        </div>
-        
-        
-        <form id="form1" action="#" method="post" target="_blank" onsubmit="return ValidationEvent()">
+                <div id="dvCanActivities" style="display: none">
+                    <input type="checkbox" id="CanParks" name="CanParks" value="Parks and Recreation">
+                    <label for=CanParks>Parks and Recreation</label><br>
+                    <input type="checkbox" id="CanBeach" name="CanBeach" value="Beaches">
+                    <label for=CanBeach>Beaches</label><br>
+                    <input type="checkbox" id="CanBoating" name="CanBoating" value="Beaches">
+                    <label for=CanBoating>Boating</label><br>
+                    <input type="checkbox" id="CanSnorkel" name="CanSnorkel" value="Snorkeling">
+                    <label for=CanSnorkel>Snorkeling</label><br>
+                </div>
+            </div>
+
             <br>
             Client first name:<br>
             <input type="text" id="fName" name="fName">
@@ -99,10 +98,10 @@
             <input type="text" id="lName" name="lName">
             <br>
             Client Phone Number:<br>
-            <input type="tel" id="phoneNo" name="phoneNo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <small>Format: 123-456-7890</small>
+            <input type="tel" id="phoneNo" name="phoneNo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4})"><small>Format: 123-456-7890</small>
             <br>
             Client Email:<br>
-            <input type="text" id="email" name="email">
+            <input type="email" id="email" name="email">
             <br>
             Number of Adults:<br>
             <input type="number" id="noOfAdults" name="noOfAdults">
@@ -111,7 +110,7 @@
             <input type="number" id="noOfChild" name="noOfChild">
             <br>
             Travel Dates:<br>
-            <input name="travelDates" id="date" type="date">
+            <input name="date" id="date" type="date">
             <br>
             <input type="submit" value="Submit"> 
             </form>
