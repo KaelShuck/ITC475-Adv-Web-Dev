@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+header
+{
+    text-align: center;
+    background-color: lightblue;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.bar
+{
+    display: flex;
+    background: lightgray;
+    padding: 10px;
+}
+
+.daynight p
+{
+    display: block;
+    margin: 0 auto;
+}
+
+#sunmoon
+{
+    display: block;
+    margin: 0 auto;
+}
+
+nav
+{
+    margin-top: 20px;
+    background: black;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+nav a
+{
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color:orange;
+}
+
+.intro
+{
+    margin: 30px 0;
+    padding: 0 10px;
+
+}
+
+.intro h1
+{
+    margin-bottom: 15px;
+}
+
+.intro p
+{
+    line-height: 1.5;
+}
+
+.cards
+{
+    margin-bottom: 30px;
+}
+
+.card
+{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+
+@keyframes cardAnimation
+{
+    from
+    {
+        background-color: white;
+        color: black;
+        border-width: 1px;
+        padding: 15px;
+    }
+    to
+    {
+        background-color: black;
+        color: white;
+        border-width: 5px;
+        padding: 11px;
+    }
+}
+
+.card:hover
+{
+    animation: cardAnimation 2s;
+}
+
+.card a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover
+{
+    color: white;
+}
+
+.card img
+{
+    width: 100%;
+}
+
+.card h2
+{
+    margin: 30px 0 15px;
+}
+
+.card p
+{
+    line-height: 1.5;
+}
+
+.original-price
+{
+    color: grey;
+    text-transform: uppercase;
+}
+
+.current-price span
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.saving
+{
+    color: green;
+}
+
+footer
+{
+    list-style: none;
+    background: black;
+    padding: 10px 50px;
+}
+
+footer p
+{
+    color: white;
+}
+
+@media (min-width: 768px)
+{
+    header
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    nav
+    {
+        background: transparent;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    nav a
+    {
+        color: black;
+        position: relative;
+        top: 0;
+        transition: top 0.5s, color 0.5s;
+    }
+
+    nav a:hover
+    {
+        text-decoration: none;
+        color: red;
+        top: -10px;
+    }
+
+    .intro
+    {
+        width: 50%;
+    }
+
+    .cards
+    {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .card
+    {
+        display: inline block;
+    }
+
+
+}
+
+.padding20{
+    padding:20px;
+}
+
+.btn-lg{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 25px;
+    padding-right:25px;
+}
+
+.input-lg{
+    font-size:1.3em;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
